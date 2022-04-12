@@ -1,1 +1,5 @@
-# cv
+# CV
+
+```shell
+xelatex cv.tex
+```

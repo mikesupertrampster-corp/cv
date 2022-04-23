@@ -121,13 +121,14 @@ Last Updated on \today
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = \pathdescriptorfont]{\descriptorfont}\fontsize{\descriptorsize}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
-\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
+\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{10pt}\selectfont {#1\\} \normalfont}
 
 % Contact Line
-\newcommand{\contactline}[2]{\begingroup
+\newcommand{\contactline}[3]{\begingroup
 \setbox0=\hbox{
-\includegraphics[scale=0.20,trim={1.4cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#1}\hspace{0.3cm}
-\includegraphics[scale=0.20,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#2}\hspace{0.3cm}
+\includegraphics[scale=0.20,trim={1.4cm 1.25cm -0.4cm 0cm}]{icons/github.png}{#1}
+\includegraphics[scale=0.20,trim={0cm 1.25cm -0.4cm 0cm}]{icons/linkedin.png}{#2}
+\includegraphics[scale=0.20,trim={0cm 1.25cm -0.4cm 0cm}]{icons/mail.png}{#3}
 }\parbox{\wd0}{\box0}\endgroup}
 
 % Inline Centered Logo
